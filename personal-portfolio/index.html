@@ -1,0 +1,975 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Personal portfolio of Gaurav Kumar, Computer Science Engineering student and web developer.">
+
+  <title>Gaurav Kumar | Personal Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Main JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+
+      <a class="logo" href="#home">GK<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link nav-contact">Contact ↗</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero section container" id="home">
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          AVAILABLE FOR OPPORTUNITIES
+        </p>
+
+        <h1>
+          Hi, I'm
+          <span class="gradient-text">Gaurav Kumar.</span>
+          <br>
+          I am a
+          <span id="typingText" class="gradient-text">Web Developer</span>
+          <span class="typing-cursor">|</span>
+        </h1>
+
+        <p class="hero-description">
+          I'm a Computer Science Engineering student at
+          Maharaja Surajmal Institute of Technology, Delhi.
+          I am passionate about web development, programming
+          and building creative digital experiences.
+          My goal is to become a skilled software engineer.
+        </p>
+
+        <div class="hero-actions">
+
+          <a class="button button-primary" href="#projects">
+            Explore my work <span>↗</span>
+          </a>
+
+          <a class="button button-ghost" href="#contact">
+            Let's talk
+          </a>
+
+        </div>
+
+        <div class="hero-meta">
+          <span>HTML · CSS · JavaScript</span>
+          <span>Based in India</span>
+        </div>
+
+      </div>
+
+      <div class="hero-art">
+
+        <div class="profile-image-wrapper">
+
+          <img
+            src="images/gaurav.jpg"
+            alt="Gaurav Kumar Profile Photo"
+            class="profile-image"
+          >
+
+        </div>
+
+        <div class="floating-tag tag-one">
+          ✦ Web Developer
+        </div>
+
+        <div class="floating-tag tag-two">
+          CSE Student
+        </div>
+
+      </div>
+
+      <a class="scroll-cue" href="#about">
+        SCROLL TO EXPLORE ↓
+      </a>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section container" id="about">
+
+      <div class="section-heading">
+        <p class="eyebrow">01 — ABOUT ME</p>
+
+        <h2>
+          A little about
+          <span class="gradient-text">myself.</span>
+        </h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-mark">“</div>
+
+        <div>
+
+          <p class="about-lead">
+            I believe great digital products are built where
+            thoughtful design meets purposeful code.
+          </p>
+
+          <p class="muted">
+            I am Gaurav Kumar, a Computer Science Engineering
+            student at Maharaja Surajmal Institute of Technology,
+            Delhi. I am passionate about web development,
+            programming, and learning new technologies.
+            I enjoy building creative projects and solving
+            real-world problems. My goal is to become a skilled
+            software engineer and continuously improve my skills.
+          </p>
+
+          <div class="quick-facts">
+
+            <div>
+              <strong>03+</strong>
+              <span>Projects</span>
+            </div>
+
+            <div>
+              <strong>10+</strong>
+              <span>Technologies</span>
+            </div>
+
+            <div>
+              <strong>∞</strong>
+              <span>Things to learn</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section section-soft" id="education">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">02 — MY EDUCATION</p>
+          <h2>Academic <span class="gradient-text">Journey.</span></h2>
+          <p class="muted">
+            My educational background and learning journey.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+              <span class="timeline-date">Diploma</span>
+
+              <h3>Diploma in Mechanical Engineering</h3>
+
+              <p class="muted">
+                Completed Diploma in Mechanical Engineering
+                with 66.6%.
+              </p>
+
+              <span class="timeline-status">Completed</span>
+            </div>
+
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+              <span class="timeline-date">B.Tech</span>
+
+              <h3>Bachelor of Technology - CSE</h3>
+
+              <p class="muted">
+                Computer Science Engineering student at
+                Maharaja Surajmal Institute of Technology,
+                Delhi.
+              </p>
+
+              <span class="timeline-status">Pursuing</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section container" id="experience">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">03 — EXPERIENCE</p>
+
+        <h2>My Work <span class="gradient-text">Experience.</span></h2>
+
+        <p class="muted">
+          My practical learning and professional experience.
+        </p>
+
+      </div>
+
+      <!-- WEB DEVELOPMENT INTERNSHIP -->
+      <div class="experience-card">
+
+        <div class="experience-icon">💻</div>
+
+        <div class="experience-content">
+
+          <span class="timeline-date">Internship</span>
+
+          <h3>Web Development Intern</h3>
+
+          <p class="muted">
+            Completed a Web Development Internship where
+            I gained practical exposure to website development,
+            frontend technologies and building web projects.
+          </p>
+
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Web Development</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- DATA SCIENCE INTERNSHIP -->
+      <div class="experience-card">
+
+        <div class="experience-icon">📊</div>
+
+        <div class="experience-content">
+
+          <span class="timeline-date">Internship</span>
+
+          <h3>Data Science Intern</h3>
+
+          <p class="muted">
+            Successfully completed a Data Science Virtual
+            Internship at CodSoft, gaining practical
+            experience in Python, data analysis,
+            data preprocessing and machine learning.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>Data Science</span>
+            <span>Machine Learning</span>
+            <span>Data Analysis</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section class="section container" id="certificates">
+
+      <div class="section-heading heading-row">
+        <div>
+          <p class="eyebrow">07 — MY CERTIFICATES</p>
+          <h2>My Internship <span class="gradient-text">Certificates.</span></h2>
+        </div>
+        <p class="muted">My professional learning and internship journey.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- UIBox Studio -->
+        <article class="project-card">
+
+          <div class="project-visual visual-blue">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="fraud-ui">
+              <span>INTERNSHIP CERTIFICATE</span>
+              <strong>WEB</strong>
+              <small>Web Development Internship</small>
+              <div class="bars">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <span class="visual-label">01 / WEB DEVELOPMENT</span>
+          </div>
+
+          <div class="project-info">
+            <p class="eyebrow">UIBOX STUDIO</p>
+            <h3>Web Development Internship</h3>
+
+            <p>
+              Successfully completed an internship with the
+              IT Department at UIBox Studio from 22 June 2026
+              to 03 August 2026.
+            </p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a class="text-link"
+               href="certificates/uibox-web-development-internship.jpg"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Certificate ↗
+            </a>
+          </div>
+
+        </article>
+
+        <!-- CodSoft -->
+        <article class="project-card">
+
+          <div class="project-visual visual-violet">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="fraud-ui">
+              <span>INTERNSHIP CERTIFICATE</span>
+              <strong>DS</strong>
+              <small>Data Science Virtual Internship</small>
+              <div class="bars">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <span class="visual-label">02 / DATA SCIENCE</span>
+          </div>
+
+          <div class="project-info">
+            <p class="eyebrow">CODSOFT</p>
+            <h3>Data Science Virtual Internship</h3>
+
+            <p>
+              Successfully completed a four-week virtual
+              internship program in Data Science at CodSoft
+              from 25 September 2026 to 25 October 2026.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Data Science</span>
+              <span>Machine Learning</span>
+            </div>
+
+            <a class="text-link"
+               href="certificates/codsoft-data-science-internship.png"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Certificate ↗
+            </a>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">05 — SKILLS</p>
+          <h2>Tools I build with</h2>
+        </div>
+
+        <!-- TECHNOLOGY CARDS -->
+        <div class="tech-grid">
+
+          <!-- LANGUAGES -->
+          <article class="tech-card">
+            <h3>LANGUAGES</h3>
+
+            <div class="tech-items">
+
+              <div class="tech-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-cplusplus-plain colored"></i>
+                <span>C++</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-java-plain colored"></i>
+                <span>Java</span>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- FRONTEND -->
+          <article class="tech-card">
+            <h3>FRONTEND</h3>
+
+            <div class="tech-items">
+
+              <div class="tech-item">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- DATABASE -->
+          <article class="tech-card">
+            <h3>DATABASE</h3>
+
+            <div class="tech-items">
+
+              <div class="tech-item">
+                <i class="devicon-mysql-original colored"></i>
+                <span>MySQL</span>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- TOOLS -->
+          <article class="tech-card">
+            <h3>TOOLS</h3>
+
+            <div class="tech-items">
+
+              <div class="tech-item">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-github-original"></i>
+                <span>GitHub</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-vscode-plain colored"></i>
+                <span>VS Code</span>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+        <!-- CORE PROFICIENCY -->
+        <div class="core-proficiency">
+
+          <h3>Core Proficiency</h3>
+
+          <div class="proficiency-item">
+            <div class="proficiency-heading">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="proficiency-track">
+              <div class="proficiency-fill" style="width:90%"></div>
+            </div>
+          </div>
+
+          <div class="proficiency-item">
+            <div class="proficiency-heading">
+              <span>JAVA</span>
+              <span>80%</span>
+            </div>
+            <div class="proficiency-track">
+              <div class="proficiency-fill" style="width:80%"></div>
+            </div>
+          </div>
+
+          <div class="proficiency-item">
+            <div class="proficiency-heading">
+              <span>REACT.JS</span>
+              <span>60%</span>
+            </div>
+            <div class="proficiency-track">
+              <div class="proficiency-fill" style="width:60%"></div>
+            </div>
+          </div>
+
+          <div class="proficiency-item">
+            <div class="proficiency-heading">
+              <span>CSS</span>
+              <span>50%</span>
+            </div>
+            <div class="proficiency-track">
+              <div class="proficiency-fill" style="width:50%"></div>
+            </div>
+          </div>
+
+          <div class="proficiency-item">
+            <div class="proficiency-heading">
+              <span>JAVASCRIPT</span>
+              <span>20%</span>
+            </div>
+            <div class="proficiency-track">
+              <div class="proficiency-fill" style="width:20%"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section container" id="projects">
+
+      <div class="section-heading heading-row">
+        <div>
+          <p class="eyebrow">06 — MY PROJECTS</p>
+          <h2>Things I've <span class="gradient-text">built.</span></h2>
+        </div>
+        <p class="muted">My practical work and development journey.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1: STUDENT MANAGEMENT SYSTEM -->
+        <article class="project-card">
+
+          <div class="project-visual visual-blue">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="mock-dashboard">
+              <div class="mock-sidebar"></div>
+              <div class="mock-content">
+                <b></b><b></b>
+                <div class="mock-chart"></div>
+                <div class="mock-row"></div>
+              </div>
+            </div>
+            <span class="visual-label">01 / WEB APP</span>
+          </div>
+
+          <div class="project-info">
+            <p class="eyebrow">HTML · CSS · JAVASCRIPT</p>
+            <h3>Student Management System</h3>
+
+            <p>
+              A web-based student management application
+              with features to add, search, edit and delete
+              student records. Includes attendance and marks
+              management using localStorage.
+            </p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a class="text-link"
+               href="https://github.com/gaurav16hub/student-management-system"
+               target="_blank"
+               rel="noopener noreferrer">
+              View on GitHub ↗
+            </a>
+          </div>
+
+        </article>
+
+        <!-- PROJECT 2: CREDIT CARD FRAUD DETECTION -->
+        <article class="project-card">
+
+          <div class="project-visual visual-violet">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="fraud-ui">
+              <span>TRANSACTION ANALYSIS</span>
+              <strong>ML</strong>
+              <small>Fraud Detection Model</small>
+              <div class="bars">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <span class="visual-label">02 / MACHINE LEARNING</span>
+          </div>
+
+          <div class="project-info">
+            <p class="eyebrow">PYTHON · PANDAS · MACHINE LEARNING</p>
+            <h3>Credit Card Fraud Detection</h3>
+
+            <p>
+              A machine learning project that analyzes
+              credit card transaction data and identifies
+              potentially fraudulent transactions.
+              Includes model evaluation using precision and recall.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Scikit-learn</span>
+            </div>
+
+            <a class="text-link"
+               href="https://github.com/gaurav16hub/credit-card-fraud-detection"
+               target="_blank"
+               rel="noopener noreferrer">
+              View on GitHub ↗
+            </a>
+          </div>
+
+        </article>
+
+        <!-- PROJECT 3: MOVIE RATING PREDICTION -->
+        <article class="project-card">
+
+          <div class="project-visual visual-orange">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="shop-ui">
+              <div class="shop-circle">★</div>
+              <div class="shop-lines">
+                <b></b><b></b><b></b>
+              </div>
+              <div class="shop-products">
+                <i></i><i></i><i></i>
+              </div>
+            </div>
+            <span class="visual-label">03 / MACHINE LEARNING</span>
+          </div>
+
+          <div class="project-info">
+            <p class="eyebrow">PYTHON · PANDAS · MACHINE LEARNING</p>
+            <h3>Movie Rating Prediction</h3>
+
+            <p>
+              A machine learning project designed to analyze
+              movie-related data and predict movie ratings
+              based on selected features.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Machine Learning</span>
+            </div>
+
+            <a class="text-link"
+               href="https://github.com/gaurav16hub/movie-rating-prediction"
+               target="_blank"
+               rel="noopener noreferrer">
+              View on GitHub ↗
+            </a>
+          </div>
+
+        </article>
+
+        <!-- PROJECT 4: PYTHON SNAKE GAME -->
+        <article class="project-card">
+
+          <div class="project-visual visual-blue">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="fraud-ui">
+              <span>PYTHON GAME</span>
+              <strong>🐍</strong>
+              <small>Snake Game · Play & Score</small>
+              <div class="bars">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <span class="visual-label">04 / PYTHON GAME</span>
+          </div>
+
+          <div class="project-info">
+            <p class="eyebrow">PYTHON · PYGAME</p>
+            <h3>Python Snake Game</h3>
+
+            <p>
+              A classic snake game developed using Python.
+              Players control the snake, collect food,
+              increase their score and avoid collisions.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Pygame</span>
+              <span>Game Development</span>
+            </div>
+
+            <a class="text-link"
+               href="https://github.com/gaurav16hub/python_snake_game"
+               target="_blank"
+               rel="noopener noreferrer">
+              View on GitHub ↗
+            </a>
+          </div>
+
+        </article>
+
+        <!-- PROJECT 5: SALES PREDICTION -->
+        <article class="project-card">
+
+          <div class="project-visual visual-violet">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="fraud-ui">
+              <span>SALES ANALYTICS</span>
+              <strong>📈</strong>
+              <small>Sales Prediction Model</small>
+              <div class="bars">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <span class="visual-label">05 / DATA SCIENCE</span>
+          </div>
+
+          <div class="project-info">
+            <p class="eyebrow">PYTHON · PANDAS · MACHINE LEARNING</p>
+            <h3>Sales Prediction</h3>
+
+            <p>
+              A data-driven project that analyzes historical
+              sales information and predicts future sales
+              trends using machine learning techniques.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Scikit-learn</span>
+            </div>
+
+            <a class="text-link"
+               href="https://github.com/gaurav16hub/sales-prediction-ml"
+               target="_blank"
+               rel="noopener noreferrer">
+              View on GitHub ↗
+            </a>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section class="section section-soft" id="resume">
+
+      <div class="container resume-panel">
+
+        <div>
+          <p class="eyebrow">MY RESUME</p>
+
+          <h2>
+            Want to know<br>
+            more about me?
+          </h2>
+
+          <p class="muted">
+            Explore my professional resume, education,
+            technical skills, internships and projects.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+
+          <a class="button button-primary"
+             href="resume.pdf"
+             target="_blank"
+             rel="noopener noreferrer">
+            View CV ↗
+          </a>
+
+          <a class="button button-ghost"
+             href="resume.pdf"
+             download="Gaurav_Kumar_Resume.pdf">
+            Download CV ↓
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section container" id="contact">
+
+      <div class="section-heading">
+        <p class="eyebrow">08 — CONTACT ME</p>
+        <h2>Let's work <span class="gradient-text">together.</span></h2>
+        <p class="muted">
+          Have a project or opportunity in mind? Feel free to contact me.
+        </p>
+      </div>
+
+      <div class="contact-details">
+
+        <!-- EMAIL -->
+        <a href="mailto:kumargaurav34492@gmail.com">
+          ✉ &nbsp; kumargaurav34492@gmail.com
+        </a>
+
+        <!-- LINKEDIN -->
+        <a href="https://www.linkedin.com/in/gaurav-kumar-4a3ab8335?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+           target="_blank"
+           rel="noopener noreferrer">
+          ↗ &nbsp; LinkedIn
+        </a>
+
+        <!-- GITHUB -->
+        <a href="https://github.com/gaurav16hub"
+           target="_blank"
+           rel="noopener noreferrer">
+          ⌘ &nbsp; GitHub
+        </a>
+
+      </div>
+
+      <!-- EMAILJS CONTACT FORM -->
+      <form class="contact-form" id="contactForm">
+
+        <label for="name">Your name</label>
+
+        <input
+          id="name"
+          name="from_name"
+          type="text"
+          placeholder="Enter your name"
+          required
+          minlength="2">
+
+        <label for="email">Email address</label>
+
+        <input
+          id="email"
+          name="from_email"
+          type="email"
+          placeholder="you@example.com"
+          required>
+
+        <label for="message">Message</label>
+
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Tell me a little about it..."
+          required
+          minlength="10"></textarea>
+
+        <p class="form-message"
+           id="formMessage"
+           role="status"
+           aria-live="polite">
+        </p>
+
+        <button class="button button-primary"
+          type="submit"
+          id="submitBtn">
+          Send Message <span>↗</span>
+        </button>
+
+        <p class="small muted">
+          Your message will be sent directly to my email.
+        </p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <a class="logo" href="#top">GK<span>.</span></a>
+
+      <p>
+        Designed & built with care ·
+        <span id="year"></span>
+      </p>
+
+      <a href="#top">Back to top ↑</a>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
